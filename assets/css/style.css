@@ -1,0 +1,1356 @@
+@font-face {
+    font-family: 'FuturaLightBT';
+    src: url("../fonts/FuturaLightBT.eot");
+    src: local("FuturaLightBT"), url("../fonts/FuturaLightBT.woff") format("woff"), url("../fonts/FuturaLightBT.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: 'FuturaLightBT';
+    margin: 0;
+    padding: 0;
+    /*background-color: #FCFCFC;*/
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: #ff0000;
+    text-align: center;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.m-0-10 {
+    margin: 0 10px;
+}
+
+.m-0-25 {
+    margin: 0 25px;
+}
+
+.m-10-0 {
+    margin: 10px 0;
+}
+
+.container,
+.container-fluid {
+    padding: 0;
+}
+
+.container-fluid {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 0;
+}
+
+.row [class*="col-"]{
+  padding: 0;
+}
+.navbar {
+    border: none;
+}
+
+.navbar-default {
+    background-color: #fff;
+}
+
+.table-responsive {
+    border-radius: 10px;
+}
+
+.table-responsive .table {
+    background-color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 1px;
+}
+
+.table-responsive .table td,
+.table-responsive .table th {
+    border-top: 1px solid #777 !important;
+}
+
+.table-responsive .table li {
+    border-bottom: 1px dashed #444;
+    cursor: pointer;
+    padding: 10px;
+}
+.table-responsive .table li:hover {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: #fff;
+}
+.list {
+    list-style-position: outside;
+}
+
+.list li:before {
+    content: "\00bb";
+    padding: 0px 15px;
+}
+
+.price {
+    color: #e4303d;
+    font-size: 20px;
+}
+
+.price .price-value {
+    font-weight: bold;
+}
+
+.price .price-value:before {
+    content: '\20b9';
+}
+
+.navbar-brand {
+    padding: 0px 0px;
+}
+
+.logo {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+
+/*index*/
+
+a {
+    font-weight: bold;
+    color: #595d62;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #0dc0c0;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.alter-background {
+    background-image: url("../images/shop.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.background__canvas {
+    position: absolute;
+    z-index: 10;
+}
+
+.background__title {
+    font-size: 3em;
+    position: absolute;
+    z-index: 1;
+    top: -webkit-calc(40% + 0.25em);
+    top: calc(40% + 0.25em);
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.intro {
+    position: absolute;
+    z-index: 100;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 50%;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    text-shadow: 5px 5px 8px #000000, 3px 3px 8px #000000;
+}
+
+.intro .intro-content1 {
+    position: absolute;
+    width: 80vw;
+    -webkit-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    transform: translateY(-60%);
+}
+
+.intro .intro-content1 .intro-text {
+    font-size: 7vw;
+}
+
+.wodryRX {
+    color: #EBD347;
+}
+
+.button-link {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.main-link {
+    background-color: #fff;
+    border-color: #EBD347;
+    color: #EBD347;
+    -webkit-box-shadow: 2.5px 2.5px #EBD347, 2px 2px #EBD347, 3px 3px #EBD347;
+    box-shadow: 2.5px 2.5px #EBD347, 2px 2px #EBD347, 3px 3px #EBD347;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1;
+    -ms-flex: 0 1;
+    flex: 0 1;
+    -webkit-flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    font-size: 2vw;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px #000000, 1px 1px 3px #000000;
+}
+
+.main-link:hover {
+    background-color: #EBD347;
+    color: #fff;
+    border-color: #fff;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.navbar {
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+/*.banner:after{clear: both;}*/
+.banner{
+  background-image: url('../images/about.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+position: relative;
+}
+.banner img{position: static;}
+.banner h1{padding: 100px 0;margin:0;color: #fff;text-align: center;}
+/*about*/
+.overlay{
+    background: rgba(255,255,255,.3);
+    float: left;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+#about,
+.items {
+    float: left;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#about:after,
+.items:after {
+    clear: both;
+}
+
+.about-inner,
+.items-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+
+/*products*/
+
+.items {
+    /*background-color: #444;*/
+    background-image: url('../images/shop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.product {width: 80%;margin: 0 auto;}
+
+.product li{
+  float: left;
+  width: 23%;
+  background-color: #fff;
+  height: 25vh;
+  position: relative;
+  margin: 1px;
+  padding: 15px;
+}
+.product li:hover{
+  background-color:#ff0000 ;
+  color: #fff;
+}
+
+
+/*contact-us*/
+
+#sana-contact,
+#fly-contact {
+    width: 100%;
+    background-image: url("../images/contact-us.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#contact-det {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0px 20px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#contact-det .contact-text,
+#contact-det .contact-img {
+    margin: 20px auto;
+    text-align: center;
+    color: #EBD347;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+}
+
+.contact-text:hover,
+.contact-text:active,
+.contact-text:focus {
+    -webkit-box-shadow: -1px 3px 29px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 3px 29px 8px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-text p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1em;
+}
+
+.contact-text a {
+    color: #EBD347;
+}
+
+.totop {
+    bottom: 10px;
+    position: fixed;
+    right: 10px;
+    z-index: 104400;
+}
+
+.totop a i {
+    background: #ff0000 none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    width: 32px;
+}
+
+#footer {
+    padding: 40px 20px 0px 20px;
+    background-color: #6e6d6a;
+}
+
+#footer a {
+    color: #01fccf;
+}
+
+#footer a:hover {
+    padding-left: 10px;
+    color: #fff !important;
+    -webkit-transition: all .6s linear;
+    transition: all .6s linear;
+}
+
+#footer .footer-second {
+    padding: 10px;
+}
+
+#footer .footer-second a {
+    padding-left: 10px;
+}
+
+.separator {
+    background-color: #00923F;
+    height: 1.2px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+    margin-top: 25px;
+    width: 50%;
+}
+
+.separator-style {
+    background-color: #FDEF0D;
+    border-color: #DA251C;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    display: block;
+    height: 15px;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -7px;
+    position: absolute;
+    width: 15px;
+}
+
+.site-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.contact {
+    padding: 0;
+    margin: 0;
+}
+
+.contact li {
+    display: inline-block;
+}
+
+.contact li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.contact li a span {
+    margin-left: 10px;
+}
+
+.contact li:hover a,
+.navbar-default .navbar-nav > li > a {
+    color: #ff0000;
+    background-color: #fff;
+}
+
+.contact-us {
+    float: left;
+}
+
+.social {
+    float: right;
+}
+
+.contact,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: #ff0000;
+    /* #00913c;*/
+    color: #fff;
+}
+
+.no-margin {
+    margin: 0px !important;
+    background-color: transparent !important;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.pagination {
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+}
+
+.pagination p {
+    font-size: 19px;
+    color: #000;
+    padding-bottom: 15px;
+}
+
+.pagination a {
+    color: #F9BF37;
+}
+
+.pagination h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 2px solid #FEC907;
+}
+
+.pagination-outer,
+.pagination-outer .pagination {
+    padding: 0;
+}
+
+#fly-service {
+    margin: 30px 80px;
+}
+
+#fly-service .fly-advertise h5 {
+    color: #F8862C;
+    text-align: center !important;
+}
+
+#fly-service h1 {
+    text-align: center;
+}
+
+#fly-service h2 {
+    padding-left: 15px;
+    color: #00923F;
+}
+
+#fly-service p {
+    letter-spacing: 1.2px;
+}
+
+#fly-service .service-inner {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+#fly-service .service-inner img {
+    width: 100%;
+    height: 200px;
+}
+
+#fly-service .service-inner .btn {
+    border: 1px solid #00923F;
+    margin-top: 10px;
+    float: right;
+    font-size: 10px;
+    padding: 3px 5px;
+    transition: all 1s ease-in-out;
+}
+
+#fly-service .service-inner .btn:hover {
+    background-color: #00923F;
+    color: #fff;
+}
+
+.breadCrumb {
+    clear: both;
+    padding: 10px auto;
+}
+
+.breadCrumb p {
+    color: #000;
+    font-size: 16px;
+}
+
+.breadCrumb p a {
+    /*color: #0dc0c0;*/
+    color: #018c33;
+}
+
+#saying-1 {
+    background: url("../images/img/mandalpatti-madikeri.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+.saying-text {
+    font-size: 25px;
+    color: #000;
+    margin: 0px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 50px 25px;
+}
+
+#fly-contact {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#fly-contact .fly-contact-inner {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px;
+}
+
+#fly-contact .fly-contact-inner h1,
+#fly-contact .fly-contact-inner p,
+#fly-contact .fly-contact-inner a {
+    color: #fff;
+    text-align: center;
+    transition: all .4s ease-in-out;
+}
+
+#fly-contact .fly-contact-inner .font-icon {
+    border: 3px solid #fc5423;
+    border-radius: 90px;
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    width: 100px;
+}
+
+#fly-contact .fly-contact-inner p.fa {
+    display: block;
+    float: none;
+    font-size: 32px;
+    margin: 20px auto 0;
+}
+
+#fly-contact .fly-contact-inner p.contact-text {
+    margin: 0px auto;
+    padding: 25px;
+    font-size: 16px;
+}
+
+#fly-contact .fly-contact-inner p.contact-text a {
+    font-family: "chivoregular" !important;
+    font-style: normal;
+    font-weight: normal;
+    text-overflow: hidden;
+    word-wrap: break-word !important;
+    padding: 0px 2px;
+}
+
+#fly-contact .fly-contact-inner p.contact-text:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+#fly-contact .fly-contact-inner .row .col-md-4,
+#fly-contact .fly-contact-inner .row .col-md-12 {
+    display: block !important;
+    margin: 0px auto;
+    padding-top: 10px;
+    text-align: center !important;
+}
+
+#fly-contact .fly-contact-inner .row .col-md-4:hover a,
+#fly-contact .fly-contact-inner .row .col-md-4:hover p,
+#fly-contact .fly-contact-inner .row .col-md-12:hover a,
+#fly-contact .fly-contact-inner .row .col-md-12:hover p {
+    color: #fc5423;
+}
+
+#fly-contact .fly-contact-inner .row .col-md-4:hover .font-icon,
+#fly-contact .fly-contact-inner .row .col-md-12:hover .font-icon {
+    border-color: #fff;
+}
+
+.bus-fligt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.bus-fligt .bus-fligt-inner {
+    flex: 1;
+    flex-basis: 40%;
+    padding: 20px;
+}
+
+
+/*change here*/
+
+.tour-images {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    /*margin: 20px 0;*/
+}
+
+.fly-international-package,
+.fly-india-package {
+    margin: 10px auto;
+}
+
+.fly-international-package h2,
+.fly-india-package h2 {
+    /*width: 1170px;*/
+    margin: 10px auto;
+}
+
+.tour-images a {
+    width: 33.333%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tour-images .tour-images-inner img {
+    width: 100%;
+    height: 250px;
+    z-index: -1;
+    transition: transform 1s ease-in-out;
+}
+
+.tour-images .tour-images-inner img:after {
+    background-color: #fff;
+}
+
+.tour-images .tour-images-inner .tour-images-inner-text {
+    background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 1.2s ease-in-out;
+}
+
+.tour-images .tour-images-inner .tour-images-inner-text h3 {
+    position: absolute;
+    bottom: 0;
+    /*width: 100%;*/
+    padding: 10px 0px 10px 30px;
+    margin: 0;
+    color: #fff;
+}
+
+.tour-images .tour-images-inner .tour-images-inner-text p {
+    position: absolute;
+    color: #fff;
+    right: -99999px;
+    transition: left .5s linear;
+    top: 60%;
+    left: 38%;
+    font-size: 19px;
+    display: none;
+}
+
+.tour-images .tour-images-inner:hover img {
+    transform: scale(1.2);
+}
+
+.tour-images .tour-images-inner .tour-images-inner-text:hover p {
+    /*left :20px;*/
+    display: block;
+}
+
+.tour-images .tour-images-inner .tour-images-inner-text:hover {
+    background-color: rgba(12, 12, 59, 0.55);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.tour-images .tour-images-inner .tour-images-inner-text:hover h3 {
+    top: 60%;
+    left: 44%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 600px) {
+    .intro {
+        -webkit-flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: flex-start;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding: 0 0 0 2em;
+        background: transparent;
+    }
+}
+
+.tour-package {
+    z-index: 99999999;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0 5px 5px -5px #333;
+    display: none;
+}
+
+.tour-package .package-ul-mobile {
+    display: none;
+}
+
+.tour-package .package-ul {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 40px;
+}
+
+.tour-package .package-ul .item {
+    text-align: center;
+    float: left;
+    padding: 0px;
+}
+
+.tour-package .package-ul .item a {
+    display: block;
+    color: #de0013;
+    padding: 20px 10px !important;
+    transition: all .5s ease-in-out;
+}
+
+.tour-package .package-ul .item a:hover {
+    background-color: rgba(222, 0, 19, 0.8);
+    color: #fff;
+}
+
+.tour-package .package-ul .active a {
+    background-color: rgba(222, 0, 19, 0.8);
+    color: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.hajj-umrah {
+    clear: both;
+}
+
+.hajj-umrah .hajj {
+    background-image: url("../images/img/hajj.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.hajj-umrah .umrah {
+    background-image: url("../images/img/madina.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.hajj-umrah .col-md-6 {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: block;
+    padding: 50px;
+}
+
+.hajj-umrah .col-md-6 p.price {
+    float: right;
+}
+
+.fly-internation-tour {
+    padding: 0px;
+}
+
+
+.fly-internation-tour .fly-internation-tour-inner {
+    padding: 30px 50px;
+    /*background-color: rgba(253, 122, 255, 0.5);*/
+}
+
+.fly-internation-tour .fly-internation-tour-inner > h2 {
+    cursor: pointer;
+    font-family: "grafolita-script", serif;
+    font-weight: 400;
+}
+
+.fly-internation-tour .fly-internation-tour-inner h2,
+.fly-internation-tour .fly-internation-tour-inner p.duration,
+.fly-internation-tour .fly-internation-tour-inner h1 {
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #FF0044;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .tabs .fly-nav-tabs {
+    clear: both;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .tabs .fly-nav-tabs li {
+    text-align: center;
+    float: left;
+    margin: 5px;
+    margin-right: 0;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: rgba(51, 51, 51, 0.5);
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    list-style: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .tabs .fly-nav-tabs li span {
+    font-size: 15px;
+    display: block;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .tabs .tab-content .tab-pane {
+    display: none;
+    padding: 1.6rem;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .tabs .tab-content .active {
+    display: block;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .tabs li.active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    border: 1px solid #000;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .package-itinerary .accordion {
+    border: 1px solid #ff0044;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .package-itinerary .accordion h4 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .package-itinerary .accordion h4,
+.fly-internation-tour .fly-internation-tour-inner .package-itinerary .accordion .accordion-inner {
+    margin: 0;
+    padding: 15px;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .package-itinerary .accordion .accordion-inner {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.fly-internation-tour .fly-internation-tour-inner .package-itinerary .accordion .accordion-inner p {
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .booking {
+    margin-top: 20px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.fly-internation-tour .fly-internation-tour-inner .booking h3 {
+    color: #ff0044;
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin: 0px;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .booking .form-group .input-group {
+    width: 100%;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .booking .form-group .input-group .form-control {
+    height: 50px !important;
+    font-size: 18px;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .booking .btn1 {
+    background-color: rgba(255, 0, 68, 0.5);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 1s ease-in-out;
+    color: #fff;
+}
+
+.fly-internation-tour .fly-internation-tour-inner .booking .btn1:hover {
+    background-color: #ff0044;
+}
+
+.tour-img img {
+    padding: 10px 20px;
+    
+    /*border: 5px solid #fff;*/
+    filter: grayscale(0.5);
+    border-radius: 25px;
+    transition: all .8s ease-in-out;
+}
+
+.tour-img img:hover,
+.tour-img img:focus {
+    border-radius: 0px;
+    opacity: 1;
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.tour-detail-ul {
+    list-style-position: outside;
+    font-size: 18px;
+    color: #FF0044;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.tour-detail-ul li:before {
+    content: '\2605';
+    padding-right: 20px;
+}
+
+.tour-detail-ul li {
+    margin-top: 10px;
+}
+
+.tour-detail-ul li:last-child {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 599px) {
+    .slider-wrapper {
+        height: 50vh;
+    }
+    .alter-background {
+        background-size: 150% 100%;
+    }
+    .navbar-brand,
+    .logo {
+        width: 125px;
+        margin-left: 3px;
+    }
+    .intro .intro-content1 .intro-text {
+        font-size: 10vw;
+    }
+    .main-link {
+        font-size: 2.5vw;
+    }
+    #fly-service {
+        margin: 0px;
+        background-color: #eee;
+    }
+    #fly-service .service-inner li,
+    #fly-service .service-inner img {
+        width: 100%;
+        height: 200px;
+    }
+    #fly-contact .fly-contact-inner {
+        padding: 30px;
+    }
+    #fly-contact .fly-contact-inner .fly-address {
+        margin: 0px auto;
+    }
+    #fly-contact .fly-contact-inner span {
+        font-size: 16px;
+        float: left;
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .fly-home-screen {
+        height: 70vh;
+        background-image: url("../images/plane-mobile.png"), url("../images/cloud-red.png"), url("../images/front.png"), url("../images/front-2.png");
+        background-position: 120% 40px, 0px 0px, 0px 0px, 0px 0px;
+        background-repeat: no-repeat, no-repeat, repeat;
+        position: relative;
+    }
+    .bus-fligt {
+        padding: 0px !important;
+    }
+    #fly-contact .fly-contact-inner {
+        padding: 20px 0px;
+    }
+    #fly-contact .fly-contact-inner p.contact-text {
+        padding: 25px 0px;
+    }
+    .image_outer {
+        display: none;
+    }
+    .tour-package {
+        display: block !important;
+    }
+    .tour-package .package-ul-mobile {
+        display: block;
+        float: left;
+        padding: 20px 20px;
+        cursor: pointer;
+    }
+    .tour-package .package-ul {
+        display: none;
+        float: none;
+        margin-left: 0px;
+        clear: both;
+    }
+    .tour-package .package-ul .item {
+        float: none;
+        width: 100%;
+    }
+    .tour-package .package-ul .item a {
+        border-bottom: 1px solid #000;
+    }
+    .hajj-umrah .col-md-6 {
+        padding: 50px 10px;
+    }
+    .fly-internation-tour {
+        padding: 0;
+    }
+    .fly-internation-tour .fly-internation-tour-inner {
+        padding: 20px 10px;
+    }
+    .fly-internation-tour .fly-nav-tabs span {
+        display: none !important;
+    }
+    .tour-img img {
+        display: block;
+        margin: 10px auto;
+    }
+    .tour-images a {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*changed here*/
+
+/*.banner {
+    height: 600px;
+    width: 100%;
+}*/
+
+.video-back {
+    position: relative;
+    height: 75vh;
+    background-color: #444;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-back:after {
+    display: inline-block;
+    content: '';
+    clear: both;
+}
+
+.video-back2 {
+    position: relative;
+    background-color: #444;
+    padding: 0;
+    margin: 0;
+    z-index: -2;
+}
+
+.video-back video,
+.video-back2 video {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+
+/* *mouse movements*/
+
+.image_outer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.images {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.cloud {
+    position: absolute;
+    bottom: -8px;
+    left: 32%;
+    width: auto;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 50px;
+    left: 38%;
+    width: auto;
+}
+
+.honeymoon-img {
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    width: auto;
+}
+
+.international-img {
+    position: absolute;
+    top: 250px;
+    left: 18%;
+    width: auto;
+}
+
+.hajj-umrah-img {
+    position: absolute;
+    bottom: 30px;
+    left: 20%;
+    width: auto;
+}
+
+.north-indian-img {
+    position: absolute;
+    top: 100px;
+    right: 10%;
+    width: auto;
+}
+
+.south-indian-img {
+    position: absolute;
+    bottom: 250px;
+    right: 15%;
+    width: auto;
+}
+
+.express-tours-img {
+    position: absolute;
+    bottom: 50px;
+    right: 15%;
+    width: auto;
+}
+
+.cloud,
+.cloud2,
+.honeymoon-img,
+.international-img,
+.hajj-umrah-img,
+.north-indian-img,
+.south-indian-img,
+.express-tours-img {
+    cursor: pointer;
+    height: auto;
+    z-index: 2;
+}
+
+.honeymoon-img,
+.international-img,
+.hajj-umrah-img,
+.north-indian-img,
+.south-indian-img,
+.express-tours-img {
+    width: 180px;
+}
+
+.honeymoon-img:hover,
+.international-img:hover,
+.hajj-umrah-img:hover,
+.north-indian-img:hover,
+.south-indian-img:hover,
+.express-tours-img:hover {
+    filter: contrast(0);
+}
+
+
+/*# sourceMappingURL=style.css.map */
